@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Restaurant — Catering</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">Delish Bites</h1>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="locations.html">Locations</a>
+        <a href="catering.html">Catering</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2 class="page-title">Catering & Orders</h2>
+
+    <section class="contact-section">
+      <p class="muted">Fill out the form or call us to place a catering order. We'll get back to you with pricing and availability.</p>
+      <form id="cateringForm" class="form">
+        <label>Name
+          <input type="text" name="name" required>
+        </label>
+        <label>Email
+          <input type="email" name="email" required>
+        </label>
+        <label>Phone
+          <input type="tel" name="phone" required>
+        </label>
+        <label>Event Date
+          <input type="date" name="date">
+        </label>
+        <label>Details
+          <textarea name="details" rows="4"></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="btn">Send Request</button>
+          <button type="button" id="orderNowCatering" class="btn secondary">Order Catering</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year4"></span> Delish Bites</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
